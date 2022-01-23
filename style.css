@@ -1,0 +1,185 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: #333;
+}
+
+.tags-nav {
+    background-color: #888;
+    width: 100vw;
+    height: 60px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+}
+
+main {
+    background-color: #ccc;
+    width: 60vw;
+    height: 800px;
+}
+
+aside {
+    background-color: #aaa;
+    width: 30vw;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.guides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.guides article {
+    background-color: #555;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.more-btn {
+    grid-column: 1 / -1;
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    border: none;
+    background-color: #ddd;
+}
+
+.latest-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    position: relative;
+    padding: 50px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.sideways-heading {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.latest-posts article {
+    background-color: #888;
+    width: 500px;
+    height: 550px;
+}
+
+.family-container {
+    width: 90vw;
+    height: 700px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.smashing-family article {
+    background-color: #666;
+    width: 450px;
+    height: 500px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.workshops {
+    background-color: #444;
+    height: 1000px;
+}
+
+.community {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 40px;
+    height: 1500px;
+    padding: 50px;
+}
+
+.community article {
+    background-color: #aaa;
+}
+
+.potw {
+    grid-column: 1 / -1;
+}
+
+footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #444;
+}
