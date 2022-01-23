@@ -57,6 +57,8 @@ table {
 
 body {
     text-align: center;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
 header {
@@ -84,11 +86,33 @@ main {
     height: 800px;
 }
 
+article h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3, aside h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article, aside {
+    padding: 30px;
+}
+
+main article:first-child {
+    margin-bottom: 200px;
+}
+
 aside {
     background-color: #aaa;
     width: 30vw;
     height: 600px;
     border-radius: 10px;
+}
+
+aside h2 {
+    font-family: serif;
 }
 
 .guides {
@@ -106,6 +130,7 @@ aside {
     width: 500px;
     height: 350px;
     border-radius: 20px;
+    color: white;
 }
 
 .more-btn {
@@ -153,11 +178,19 @@ aside {
     margin-right: 20px;
     flex-shrink: 0;
     border-radius: 20px;
+    color: white;
 }
 
 .workshops {
     background-color: #444;
     height: 1000px;
+    color: white;
+    padding: 50px 300px;
+}
+
+.workshops h2 {
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .community {
