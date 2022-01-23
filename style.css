@@ -57,7 +57,7 @@ table {
 
 body {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Spinnaker', sans-serif;
     line-height: 1.5;
 }
 
@@ -84,6 +84,10 @@ main {
     background-color: #ccc;
     width: 60vw;
     height: 800px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Work Sans', sans-serif;
 }
 
 article h2 {
